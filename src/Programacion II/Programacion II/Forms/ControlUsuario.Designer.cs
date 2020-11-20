@@ -49,6 +49,7 @@ namespace Programacion_II.Forms
             this.Bt_cancelar = new System.Windows.Forms.Button();
             this.Bt_guardar = new System.Windows.Forms.Button();
             this.Info = new System.Windows.Forms.ToolTip(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -261,6 +262,14 @@ namespace Programacion_II.Forms
             // 
             this.Info.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(355, 24);
+            this.menuStrip1.TabIndex = 14;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
             // ControlUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
@@ -281,7 +290,9 @@ namespace Programacion_II.Forms
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ControlUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -314,5 +325,6 @@ namespace Programacion_II.Forms
         private System.Windows.Forms.Button Bt_cancelar;
         private System.Windows.Forms.Button Bt_guardar;
         private System.Windows.Forms.ToolTip Info;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }
