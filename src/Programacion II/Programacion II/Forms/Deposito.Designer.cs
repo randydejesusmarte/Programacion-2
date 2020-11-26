@@ -457,6 +457,7 @@ namespace Programacion_II
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Deposito";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Depósito";

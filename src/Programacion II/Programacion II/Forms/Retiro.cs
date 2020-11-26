@@ -35,10 +35,5 @@ namespace Programacion_II
             vHora = DateTime.Now.ToString("hh:mm");
             Tiempo.Text = vDia + " " + vHora;
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

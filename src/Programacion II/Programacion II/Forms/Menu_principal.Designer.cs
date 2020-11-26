@@ -29,13 +29,14 @@ namespace Programacion_II
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_principal));
             this.BtDeposito = new System.Windows.Forms.Button();
             this.BtRetiro = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.Btlogout = new System.Windows.Forms.Button();
+            this.Btacercad = new System.Windows.Forms.Button();
             this.BtPrestamo = new System.Windows.Forms.Button();
             this.BtUsuario = new System.Windows.Forms.Button();
-            this.Btacercad = new System.Windows.Forms.Button();
-            this.Btlogout = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +87,32 @@ namespace Programacion_II
             this.tableLayoutPanel1.Size = new System.Drawing.Size(592, 355);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
+            // Btlogout
+            // 
+            this.Btlogout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Btlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btlogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.Btlogout.Location = new System.Drawing.Point(411, 180);
+            this.Btlogout.Name = "Btlogout";
+            this.Btlogout.Size = new System.Drawing.Size(178, 172);
+            this.Btlogout.TabIndex = 5;
+            this.Btlogout.Text = "Cerrar seccion";
+            this.Btlogout.UseVisualStyleBackColor = true;
+            this.Btlogout.Click += new System.EventHandler(this.Btlogout_Click);
+            // 
+            // Btacercad
+            // 
+            this.Btacercad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Btacercad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btacercad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.Btacercad.Location = new System.Drawing.Point(207, 180);
+            this.Btacercad.Name = "Btacercad";
+            this.Btacercad.Size = new System.Drawing.Size(198, 172);
+            this.Btacercad.TabIndex = 4;
+            this.Btacercad.Text = "Acerca de";
+            this.Btacercad.UseVisualStyleBackColor = true;
+            this.Btacercad.Click += new System.EventHandler(this.Btacercad_Click);
+            // 
             // BtPrestamo
             // 
             this.BtPrestamo.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -112,38 +139,13 @@ namespace Programacion_II
             this.BtUsuario.UseVisualStyleBackColor = true;
             this.BtUsuario.Click += new System.EventHandler(this.BtUsuario_Click);
             // 
-            // Btacercad
-            // 
-            this.Btacercad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Btacercad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btacercad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.Btacercad.Location = new System.Drawing.Point(207, 180);
-            this.Btacercad.Name = "Btacercad";
-            this.Btacercad.Size = new System.Drawing.Size(198, 172);
-            this.Btacercad.TabIndex = 4;
-            this.Btacercad.Text = "Acerca de";
-            this.Btacercad.UseVisualStyleBackColor = true;
-            this.Btacercad.Click += new System.EventHandler(this.Btacercad_Click);
-            // 
-            // Btlogout
-            // 
-            this.Btlogout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Btlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btlogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.Btlogout.Location = new System.Drawing.Point(411, 180);
-            this.Btlogout.Name = "Btlogout";
-            this.Btlogout.Size = new System.Drawing.Size(178, 172);
-            this.Btlogout.TabIndex = 5;
-            this.Btlogout.Text = "Cerrar seccion";
-            this.Btlogout.UseVisualStyleBackColor = true;
-            this.Btlogout.Click += new System.EventHandler(this.Btlogout_Click);
-            // 
             // Menu_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(592, 355);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu_principal";

@@ -29,12 +29,15 @@ namespace Programacion_II
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Txtnom = new System.Windows.Forms.TextBox();
             this.Txtcla = new System.Windows.Forms.TextBox();
             this.BT_Entrar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,6 +80,9 @@ namespace Programacion_II
             // 
             // BT_Entrar
             // 
+            this.BT_Entrar.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.BT_Entrar.FlatAppearance.BorderSize = 2;
+            this.BT_Entrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_Entrar.Location = new System.Drawing.Point(21, 268);
             this.BT_Entrar.Name = "BT_Entrar";
             this.BT_Entrar.Size = new System.Drawing.Size(301, 58);
@@ -110,7 +116,9 @@ namespace Programacion_II
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -128,5 +136,6 @@ namespace Programacion_II
         private System.Windows.Forms.TextBox Txtnom;
         private System.Windows.Forms.TextBox Txtcla;
         private System.Windows.Forms.Button BT_Entrar;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
