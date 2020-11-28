@@ -29,6 +29,7 @@ namespace Programacion_II
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_principal));
             this.BtDeposito = new System.Windows.Forms.Button();
             this.BtRetiro = new System.Windows.Forms.Button();
@@ -37,7 +38,10 @@ namespace Programacion_II
             this.Btacercad = new System.Windows.Forms.Button();
             this.BtPrestamo = new System.Windows.Forms.Button();
             this.BtUsuario = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtDeposito
@@ -89,6 +93,7 @@ namespace Programacion_II
             // 
             // Btlogout
             // 
+            this.Btlogout.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Btlogout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Btlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btlogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
@@ -109,7 +114,7 @@ namespace Programacion_II
             this.Btacercad.Name = "Btacercad";
             this.Btacercad.Size = new System.Drawing.Size(198, 172);
             this.Btacercad.TabIndex = 4;
-            this.Btacercad.Text = "Acerca de";
+            this.Btacercad.Text = "Clientes";
             this.Btacercad.UseVisualStyleBackColor = true;
             this.Btacercad.Click += new System.EventHandler(this.Btacercad_Click);
             // 
@@ -139,17 +144,35 @@ namespace Programacion_II
             this.BtUsuario.UseVisualStyleBackColor = true;
             this.BtUsuario.Click += new System.EventHandler(this.BtUsuario_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.acercaDeToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(164, 26);
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.acercaDeToolStripMenuItem.Text = "Acerca de la App";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
+            // 
             // Menu_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.Btlogout;
             this.ClientSize = new System.Drawing.Size(592, 355);
+            this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu_principal";
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -163,5 +186,7 @@ namespace Programacion_II
         private System.Windows.Forms.Button BtUsuario;
         private System.Windows.Forms.Button Btlogout;
         private System.Windows.Forms.Button Btacercad;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
     }
 }

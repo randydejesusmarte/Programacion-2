@@ -20,26 +20,22 @@ namespace Programacion_II
 
         private void BtDeposito_Click(object sender, EventArgs e)
         {
-            new Deposito().Show();
-            Close();
+            new Deposito().ShowDialog();
         }
 
         private void BtRetiro_Click(object sender, EventArgs e)
         {
-            new Retiro().Show();
-            Close();
+            new Retiro().ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new préstamo().Show();
-            Close();
+            new préstamo().ShowDialog();
         }
 
         private void BtUsuario_Click(object sender, EventArgs e)
         {
-            new Cliente().Show();
-            Close();
+            new ControlUsuario().ShowDialog();
         }
 
         private void Btlogout_Click(object sender, EventArgs e)
@@ -48,6 +44,11 @@ namespace Programacion_II
         }
 
         private void Btacercad_Click(object sender, EventArgs e)
+        {
+            new Cliente().ShowDialog();
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new AboutBox1().ShowDialog();
         }
