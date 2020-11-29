@@ -36,9 +36,11 @@ namespace Programacion_II
             Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Bt_nue_Click(object sender, EventArgs e)
         {
-
+            Cb_mon.SelectedItem = Cb_tip.SelectedItem = null;
+            Tx_nom.Text = "";
+            Mt_ced.Text = Mt_mon.Text = Mt_num.Text = Mt_val.Text = "";
         }
     }
 }

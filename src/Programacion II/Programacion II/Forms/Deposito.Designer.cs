@@ -33,26 +33,26 @@ namespace Programacion_II
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Deposito));
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.Mt_val = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.Cb_mon = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.Mt_mon = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Cb_tip = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.Mt_num = new System.Windows.Forms.MaskedTextBox();
+            this.Mt_ced = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Bt_can = new System.Windows.Forms.Button();
+            this.Bt_mod = new System.Windows.Forms.Button();
+            this.Bt_gua = new System.Windows.Forms.Button();
+            this.Bt_nue = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Tx_nom = new System.Windows.Forms.TextBox();
             this.Tempo = new System.Windows.Forms.Timer(this.components);
             this.Tiempo = new System.Windows.Forms.Label();
             this.Mensage = new System.Windows.Forms.ToolTip(this.components);
@@ -82,26 +82,26 @@ namespace Programacion_II
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.CausesValidation = false;
-            this.groupBox1.Controls.Add(this.maskedTextBox4);
+            this.groupBox1.Controls.Add(this.Mt_val);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.Cb_mon);
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.maskedTextBox3);
+            this.groupBox1.Controls.Add(this.Mt_mon);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.Cb_tip);
             this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.maskedTextBox2);
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
+            this.groupBox1.Controls.Add(this.Mt_num);
+            this.groupBox1.Controls.Add(this.Mt_ced);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.Bt_can);
+            this.groupBox1.Controls.Add(this.Bt_mod);
+            this.groupBox1.Controls.Add(this.Bt_gua);
+            this.groupBox1.Controls.Add(this.Bt_nue);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.Tx_nom);
             this.groupBox1.Location = new System.Drawing.Point(12, 94);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(807, 231);
@@ -109,17 +109,17 @@ namespace Programacion_II
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cliente";
             // 
-            // maskedTextBox4
+            // Mt_val
             // 
-            this.maskedTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox4.HidePromptOnLeave = true;
-            this.maskedTextBox4.Location = new System.Drawing.Point(658, 195);
-            this.maskedTextBox4.Mask = "$999,999.00";
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(92, 22);
-            this.maskedTextBox4.TabIndex = 19;
-            this.maskedTextBox4.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.Mt_val.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Mt_val.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mt_val.HidePromptOnLeave = true;
+            this.Mt_val.Location = new System.Drawing.Point(658, 195);
+            this.Mt_val.Mask = "$999,999.00";
+            this.Mt_val.Name = "Mt_val";
+            this.Mt_val.Size = new System.Drawing.Size(92, 22);
+            this.Mt_val.TabIndex = 11;
+            this.Mt_val.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // label4
             // 
@@ -133,21 +133,21 @@ namespace Programacion_II
             this.label4.TabIndex = 18;
             this.label4.Text = "Contenido de Cuenta:";
             // 
-            // comboBox2
+            // Cb_mon
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Cb_mon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.Cb_mon.FormattingEnabled = true;
+            this.Cb_mon.Items.AddRange(new object[] {
             "Peso----$",
             "Dollar---$",
             "Euro  ---€",
             "Libra----£"});
-            this.comboBox2.Location = new System.Drawing.Point(588, 73);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(141, 21);
-            this.comboBox2.TabIndex = 17;
-            this.comboBox2.Text = "Moneda";
+            this.Cb_mon.Location = new System.Drawing.Point(588, 73);
+            this.Cb_mon.Name = "Cb_mon";
+            this.Cb_mon.Size = new System.Drawing.Size(141, 21);
+            this.Cb_mon.TabIndex = 5;
+            this.Cb_mon.Text = "Moneda";
             // 
             // label16
             // 
@@ -160,17 +160,17 @@ namespace Programacion_II
             this.label16.TabIndex = 16;
             this.label16.Text = "Monto a Depósitar";
             // 
-            // maskedTextBox3
+            // Mt_mon
             // 
-            this.maskedTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Mt_mon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox3.HidePromptOnLeave = true;
-            this.maskedTextBox3.Location = new System.Drawing.Point(588, 47);
-            this.maskedTextBox3.Mask = "$999,999.00";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(141, 20);
-            this.maskedTextBox3.TabIndex = 15;
-            this.maskedTextBox3.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.Mt_mon.HidePromptOnLeave = true;
+            this.Mt_mon.Location = new System.Drawing.Point(588, 47);
+            this.Mt_mon.Mask = "$999,999.00";
+            this.Mt_mon.Name = "Mt_mon";
+            this.Mt_mon.Size = new System.Drawing.Size(141, 20);
+            this.Mt_mon.TabIndex = 4;
+            this.Mt_mon.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // label5
             // 
@@ -183,22 +183,22 @@ namespace Programacion_II
             this.label5.TabIndex = 14;
             this.label5.Text = "Tipo de Moneda";
             // 
-            // comboBox1
+            // Cb_tip
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Cb_tip.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.Cb_tip.FormattingEnabled = true;
+            this.Cb_tip.Items.AddRange(new object[] {
             "---Seleccione el Tipo de Cuenta---",
             "Cuenta corrientes",
             "Cuenta  de ahorro",
             "Cuenta nómina",
             "Cuenta bancarias para empresas y negocios"});
-            this.comboBox1.Location = new System.Drawing.Point(101, 79);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 13;
-            this.comboBox1.Text = "---Seleccione el Tipo de Cuenta---";
+            this.Cb_tip.Location = new System.Drawing.Point(101, 79);
+            this.Cb_tip.Name = "Cb_tip";
+            this.Cb_tip.Size = new System.Drawing.Size(200, 21);
+            this.Cb_tip.TabIndex = 2;
+            this.Cb_tip.Text = "---Seleccione el Tipo de Cuenta---";
             // 
             // label15
             // 
@@ -209,26 +209,26 @@ namespace Programacion_II
             this.label15.TabIndex = 12;
             this.label15.Text = "Tipo de Cuenta";
             // 
-            // maskedTextBox2
+            // Mt_num
             // 
-            this.maskedTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Mt_num.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(163, 51);
-            this.maskedTextBox2.Mask = "0000-000-000-00-00000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 11;
+            this.Mt_num.Location = new System.Drawing.Point(163, 51);
+            this.Mt_num.Mask = "0000-000-000-00-00000";
+            this.Mt_num.Name = "Mt_num";
+            this.Mt_num.Size = new System.Drawing.Size(100, 20);
+            this.Mt_num.TabIndex = 1;
             // 
-            // maskedTextBox1
+            // Mt_ced
             // 
-            this.maskedTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Mt_ced.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(546, 98);
-            this.maskedTextBox1.Mask = "000-0000000-0";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(183, 20);
-            this.maskedTextBox1.TabIndex = 10;
-            this.maskedTextBox1.Text = "40246135555";
+            this.Mt_ced.Location = new System.Drawing.Point(546, 98);
+            this.Mt_ced.Mask = "000-0000000-0";
+            this.Mt_ced.Name = "Mt_ced";
+            this.Mt_ced.Size = new System.Drawing.Size(183, 20);
+            this.Mt_ced.TabIndex = 6;
+            this.Mt_ced.Text = "40246135555";
             // 
             // label3
             // 
@@ -262,74 +262,74 @@ namespace Programacion_II
             this.label1.TabIndex = 0;
             this.label1.Text = "Numero de Deposito:";
             // 
-            // button4
+            // Bt_can
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button4.AutoSize = true;
-            this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = global::Programacion_II.Properties.Resources.icons8_delete_document_50px;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(199, 173);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(58, 58);
-            this.button4.TabIndex = 4;
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Mensage.SetToolTip(this.button4, "Borrar Depósito");
-            this.button4.UseVisualStyleBackColor = true;
+            this.Bt_can.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Bt_can.AutoSize = true;
+            this.Bt_can.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Bt_can.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bt_can.Image = global::Programacion_II.Properties.Resources.icons8_delete_document_50px;
+            this.Bt_can.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Bt_can.Location = new System.Drawing.Point(199, 173);
+            this.Bt_can.Margin = new System.Windows.Forms.Padding(4);
+            this.Bt_can.Name = "Bt_can";
+            this.Bt_can.Size = new System.Drawing.Size(58, 58);
+            this.Bt_can.TabIndex = 10;
+            this.Bt_can.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Mensage.SetToolTip(this.Bt_can, "Borrar Depósito");
+            this.Bt_can.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Bt_mod
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button3.AutoSize = true;
-            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(135, 173);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(58, 58);
-            this.button3.TabIndex = 4;
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Mensage.SetToolTip(this.button3, "Modificar Depósito");
-            this.button3.UseVisualStyleBackColor = true;
+            this.Bt_mod.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Bt_mod.AutoSize = true;
+            this.Bt_mod.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Bt_mod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bt_mod.Image = ((System.Drawing.Image)(resources.GetObject("Bt_mod.Image")));
+            this.Bt_mod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Bt_mod.Location = new System.Drawing.Point(135, 173);
+            this.Bt_mod.Margin = new System.Windows.Forms.Padding(4);
+            this.Bt_mod.Name = "Bt_mod";
+            this.Bt_mod.Size = new System.Drawing.Size(58, 58);
+            this.Bt_mod.TabIndex = 9;
+            this.Bt_mod.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Mensage.SetToolTip(this.Bt_mod, "Modificar Depósito");
+            this.Bt_mod.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Bt_gua
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.AutoSize = true;
-            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::Programacion_II.Properties.Resources.icons8_save_as_50px;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(71, 173);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(58, 58);
-            this.button2.TabIndex = 4;
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Mensage.SetToolTip(this.button2, "Guardar Depósito");
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Bt_gua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Bt_gua.AutoSize = true;
+            this.Bt_gua.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Bt_gua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bt_gua.Image = global::Programacion_II.Properties.Resources.icons8_save_as_50px;
+            this.Bt_gua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Bt_gua.Location = new System.Drawing.Point(71, 173);
+            this.Bt_gua.Margin = new System.Windows.Forms.Padding(4);
+            this.Bt_gua.Name = "Bt_gua";
+            this.Bt_gua.Size = new System.Drawing.Size(58, 58);
+            this.Bt_gua.TabIndex = 8;
+            this.Bt_gua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Mensage.SetToolTip(this.Bt_gua, "Guardar Depósito");
+            this.Bt_gua.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // Bt_nue
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.AutoSize = true;
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(7, 173);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 58);
-            this.button1.TabIndex = 4;
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Mensage.SetToolTip(this.button1, "Nuevo Depósito");
-            this.button1.UseVisualStyleBackColor = true;
+            this.Bt_nue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Bt_nue.AutoSize = true;
+            this.Bt_nue.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Bt_nue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bt_nue.Image = ((System.Drawing.Image)(resources.GetObject("Bt_nue.Image")));
+            this.Bt_nue.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Bt_nue.Location = new System.Drawing.Point(7, 173);
+            this.Bt_nue.Margin = new System.Windows.Forms.Padding(4);
+            this.Bt_nue.Name = "Bt_nue";
+            this.Bt_nue.Size = new System.Drawing.Size(58, 58);
+            this.Bt_nue.TabIndex = 7;
+            this.Bt_nue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Mensage.SetToolTip(this.Bt_nue, "Nuevo Depósito");
+            this.Bt_nue.UseVisualStyleBackColor = true;
+            this.Bt_nue.Click += new System.EventHandler(this.Bt_nue_Click);
             // 
             // label7
             // 
@@ -353,15 +353,15 @@ namespace Programacion_II
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre del Beneficiario ";
             // 
-            // textBox2
+            // Tx_nom
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Tx_nom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(147, 107);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(263, 20);
-            this.textBox2.TabIndex = 2;
+            this.Tx_nom.Location = new System.Drawing.Point(147, 107);
+            this.Tx_nom.Margin = new System.Windows.Forms.Padding(4);
+            this.Tx_nom.Name = "Tx_nom";
+            this.Tx_nom.Size = new System.Drawing.Size(263, 20);
+            this.Tx_nom.TabIndex = 3;
             // 
             // Tempo
             // 
@@ -472,35 +472,35 @@ namespace Programacion_II
         #endregion
 
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox Mt_ced;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Bt_can;
+        private System.Windows.Forms.Button Bt_mod;
+        private System.Windows.Forms.Button Bt_gua;
+        private System.Windows.Forms.Button Bt_nue;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Tx_nom;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer Tempo;
         private System.Windows.Forms.Label Tiempo;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ToolTip Mensage;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox Cb_tip;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox Mt_num;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox Cb_mon;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox Mt_mon;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Atras;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.MaskedTextBox Mt_val;
         private System.Windows.Forms.Label label4;
     }
 }
