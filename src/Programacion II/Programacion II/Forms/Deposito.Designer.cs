@@ -33,6 +33,7 @@ namespace Programacion_II
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Deposito));
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_id = new System.Windows.Forms.TextBox();
             this.Mt_val = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Cb_mon = new System.Windows.Forms.ComboBox();
@@ -82,6 +83,7 @@ namespace Programacion_II
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.CausesValidation = false;
+            this.groupBox1.Controls.Add(this.txt_id);
             this.groupBox1.Controls.Add(this.Mt_val);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.Cb_mon);
@@ -108,6 +110,15 @@ namespace Programacion_II
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cliente";
+            // 
+            // txt_id
+            // 
+            this.txt_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_id.Location = new System.Drawing.Point(150, 22);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(113, 20);
+            this.txt_id.TabIndex = 19;
+            this.txt_id.Text = "No. 00000001";
             // 
             // Mt_val
             // 
@@ -236,9 +247,8 @@ namespace Programacion_II
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(144, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 13);
+            this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "No. 00000001";
             // 
             // label10
             // 
@@ -278,6 +288,7 @@ namespace Programacion_II
             this.Bt_can.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Mensage.SetToolTip(this.Bt_can, "Borrar Depósito");
             this.Bt_can.UseVisualStyleBackColor = true;
+            this.Bt_can.Click += new System.EventHandler(this.Bt_can_Click);
             // 
             // Bt_mod
             // 
@@ -295,6 +306,7 @@ namespace Programacion_II
             this.Bt_mod.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Mensage.SetToolTip(this.Bt_mod, "Modificar Depósito");
             this.Bt_mod.UseVisualStyleBackColor = true;
+            this.Bt_mod.Click += new System.EventHandler(this.Bt_mod_Click);
             // 
             // Bt_gua
             // 
@@ -312,6 +324,7 @@ namespace Programacion_II
             this.Bt_gua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Mensage.SetToolTip(this.Bt_gua, "Guardar Depósito");
             this.Bt_gua.UseVisualStyleBackColor = true;
+            this.Bt_gua.Click += new System.EventHandler(this.Bt_gua_Click);
             // 
             // Bt_nue
             // 
@@ -502,6 +515,7 @@ namespace Programacion_II
         private System.Windows.Forms.Button Atras;
         private System.Windows.Forms.MaskedTextBox Mt_val;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_id;
     }
 }
 
