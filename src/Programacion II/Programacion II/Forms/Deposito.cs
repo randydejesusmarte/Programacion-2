@@ -58,7 +58,7 @@ namespace Programacion_II
                     if (formvalid())
                     {
                         conectar.Abrir();
-                        SqlCommand guardar = new SqlCommand("insert into Deposito (Num_cue, Nom_ben, Ced_cli, Tip_cue, Mon_dep, Moneda) values ('" + Mt_num.Text + "','" + Tx_nom.Text + "','" + Mt_ced.Text + "','" + Cb_tip.SelectedItem.ToString() + "','" + Mt_mon.Text + "','" + Cb_tip.SelectedItem.ToString() + "');", conectar.SqlConnection);
+                        SqlCommand guardar = new SqlCommand("insert into Deposito (Num_cue, Nom_ben, Ced_cli, Tip_cue, Mon_dep, Mone) values ('" + Mt_num.Text + "','" + Tx_nom.Text + "','" + Mt_ced.Text + "','" + Cb_tip.SelectedItem.ToString() + "','" + Mt_mon.Text + "','" + Cb_tip.SelectedItem.ToString() + "')", conectar.SqlConnection);
                         guardar.ExecuteNonQuery();
                         MessageBox.Show("Reguistro exitoso", "correcto", MessageBoxButtons.OK);
                         Limpiar();

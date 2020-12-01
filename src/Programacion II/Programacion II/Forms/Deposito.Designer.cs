@@ -151,7 +151,7 @@
             this.Cb_mon.Items.AddRange(new object[] {
             "Peso----$",
             "Dollar---$",
-            "Euro  ---€",
+            "Euro ----€",
             "Libra----£"});
             this.Cb_mon.Location = new System.Drawing.Point(588, 73);
             this.Cb_mon.Name = "Cb_mon";
@@ -226,7 +226,7 @@
             this.Mt_num.Location = new System.Drawing.Point(163, 51);
             this.Mt_num.Mask = "0000-000-000-00-00000";
             this.Mt_num.Name = "Mt_num";
-            this.Mt_num.Size = new System.Drawing.Size(100, 20);
+            this.Mt_num.Size = new System.Drawing.Size(126, 20);
             this.Mt_num.TabIndex = 1;
             // 
             // Mt_ced
