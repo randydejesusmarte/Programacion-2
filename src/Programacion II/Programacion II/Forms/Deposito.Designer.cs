@@ -1,5 +1,4 @@
-﻿
-namespace Programacion_II
+﻿namespace Programacion_II
 {
     partial class Deposito
     {

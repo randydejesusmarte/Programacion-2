@@ -68,7 +68,8 @@ namespace Programacion_II
             }
             catch (Exception es)
             {
-                MessageBox.Show(es.ToString());
+                MessageBox.Show(es.Message);
+                conectar.Cerrar();
             }
         }
 
