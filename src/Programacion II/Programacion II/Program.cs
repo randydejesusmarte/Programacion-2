@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Programacion_II.Report.Fomrs;
+using System;
 using System.Windows.Forms;
 
 namespace Programacion_II

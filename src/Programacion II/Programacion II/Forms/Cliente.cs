@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Programacion_II.Report.Fomrs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -181,6 +182,11 @@ namespace Programacion_II.Forms
             Txt_ema.Text = row.Cells[8].Value.ToString();
             Cb_tip.Text = row.Cells[9].Value.ToString();
             Mt_val.Text = row.Cells[10].Value.ToString();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            new RClintes().ShowDialog();
         }
     }
 }

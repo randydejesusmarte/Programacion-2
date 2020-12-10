@@ -32,12 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Deposito));
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_id = new System.Windows.Forms.TextBox();
-            this.Mt_val = new System.Windows.Forms.MaskedTextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.Cb_mon = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.Mt_mon = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Cb_tip = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -62,6 +58,10 @@
             this.label14 = new System.Windows.Forms.Label();
             this.Atras = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Mt_val = new System.Windows.Forms.MaskedTextBox();
+            this.txt_id = new System.Windows.Forms.TextBox();
+            this.Mt_mon = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -110,39 +110,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cliente";
             // 
-            // txt_id
-            // 
-            this.txt_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_id.Location = new System.Drawing.Point(150, 22);
-            this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(113, 20);
-            this.txt_id.TabIndex = 19;
-            this.txt_id.Text = "No. 00000001";
-            // 
-            // Mt_val
-            // 
-            this.Mt_val.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Mt_val.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mt_val.HidePromptOnLeave = true;
-            this.Mt_val.Location = new System.Drawing.Point(658, 195);
-            this.Mt_val.Mask = "$999,999.00";
-            this.Mt_val.Name = "Mt_val";
-            this.Mt_val.Size = new System.Drawing.Size(92, 22);
-            this.Mt_val.TabIndex = 11;
-            this.Mt_val.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(497, 198);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 16);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Contenido de Cuenta:";
-            // 
             // Cb_mon
             // 
             this.Cb_mon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -169,18 +136,6 @@
             this.label16.Size = new System.Drawing.Size(94, 13);
             this.label16.TabIndex = 16;
             this.label16.Text = "Monto a Depósitar";
-            // 
-            // Mt_mon
-            // 
-            this.Mt_mon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Mt_mon.HidePromptOnLeave = true;
-            this.Mt_mon.Location = new System.Drawing.Point(588, 47);
-            this.Mt_mon.Mask = "$999,999.00";
-            this.Mt_mon.Name = "Mt_mon";
-            this.Mt_mon.Size = new System.Drawing.Size(141, 20);
-            this.Mt_mon.TabIndex = 4;
-            this.Mt_mon.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // label5
             // 
@@ -453,6 +408,51 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(497, 198);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(156, 16);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Contenido de Cuenta:";
+            // 
+            // Mt_val
+            // 
+            this.Mt_val.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Mt_val.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mt_val.HidePromptOnLeave = true;
+            this.Mt_val.Location = new System.Drawing.Point(658, 195);
+            this.Mt_val.Mask = "$999,999.00";
+            this.Mt_val.Name = "Mt_val";
+            this.Mt_val.Size = new System.Drawing.Size(92, 22);
+            this.Mt_val.TabIndex = 11;
+            this.Mt_val.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // txt_id
+            // 
+            this.txt_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_id.Location = new System.Drawing.Point(150, 22);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(113, 20);
+            this.txt_id.TabIndex = 19;
+            this.txt_id.Text = "No. 00000001";
+            // 
+            // Mt_mon
+            // 
+            this.Mt_mon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Mt_mon.HidePromptOnLeave = true;
+            this.Mt_mon.Location = new System.Drawing.Point(588, 47);
+            this.Mt_mon.Mask = "$999,999.00";
+            this.Mt_mon.Name = "Mt_mon";
+            this.Mt_mon.Size = new System.Drawing.Size(141, 20);
+            this.Mt_mon.TabIndex = 4;
+            this.Mt_mon.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
             // Deposito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -509,12 +509,12 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox Cb_mon;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.MaskedTextBox Mt_mon;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Atras;
+        private System.Windows.Forms.TextBox txt_id;
         private System.Windows.Forms.MaskedTextBox Mt_val;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_id;
+        private System.Windows.Forms.MaskedTextBox Mt_mon;
     }
 }
 

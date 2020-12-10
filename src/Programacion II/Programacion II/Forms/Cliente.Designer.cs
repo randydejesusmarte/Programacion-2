@@ -36,13 +36,7 @@ namespace Programacion_II.Forms
             this.DGV = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Bt_Atras = new System.Windows.Forms.PictureBox();
-            this.Bt_Buscar = new System.Windows.Forms.PictureBox();
             this.info = new System.Windows.Forms.ToolTip(this.components);
-            this.Bt_nue = new System.Windows.Forms.Button();
-            this.Bt_gua = new System.Windows.Forms.Button();
-            this.Bt_mod = new System.Windows.Forms.Button();
-            this.Bt_can = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -66,10 +60,18 @@ namespace Programacion_II.Forms
             this.label12 = new System.Windows.Forms.Label();
             this.Cb_tip = new System.Windows.Forms.ComboBox();
             this.Mt_val = new System.Windows.Forms.MaskedTextBox();
+            this.Bt_can = new System.Windows.Forms.Button();
+            this.Bt_mod = new System.Windows.Forms.Button();
+            this.Bt_gua = new System.Windows.Forms.Button();
+            this.Bt_nue = new System.Windows.Forms.Button();
+            this.Bt_Atras = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Bt_Buscar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Bt_Atras)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Bt_Buscar)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Bt_Atras)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bt_Buscar)).BeginInit();
             this.SuspendLayout();
             // 
             // DGV
@@ -127,89 +129,8 @@ namespace Programacion_II.Forms
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(86, 13);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(324, 29);
+            this.textBox1.Size = new System.Drawing.Size(289, 29);
             this.textBox1.TabIndex = 2;
-            // 
-            // Bt_Atras
-            // 
-            this.Bt_Atras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Bt_Atras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bt_Atras.Image = global::Programacion_II.Properties.Resources.icons8_undo_50px;
-            this.Bt_Atras.Location = new System.Drawing.Point(451, 13);
-            this.Bt_Atras.Name = "Bt_Atras";
-            this.Bt_Atras.Size = new System.Drawing.Size(29, 29);
-            this.Bt_Atras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Bt_Atras.TabIndex = 29;
-            this.Bt_Atras.TabStop = false;
-            this.info.SetToolTip(this.Bt_Atras, "Volver al Menu Principal");
-            this.Bt_Atras.Click += new System.EventHandler(this.Bt_Atras_Click);
-            // 
-            // Bt_Buscar
-            // 
-            this.Bt_Buscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Bt_Buscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bt_Buscar.Image = global::Programacion_II.Properties.Resources.icons8_search_50px1;
-            this.Bt_Buscar.Location = new System.Drawing.Point(416, 13);
-            this.Bt_Buscar.Name = "Bt_Buscar";
-            this.Bt_Buscar.Size = new System.Drawing.Size(29, 29);
-            this.Bt_Buscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Bt_Buscar.TabIndex = 29;
-            this.Bt_Buscar.TabStop = false;
-            this.info.SetToolTip(this.Bt_Buscar, "Buscar");
-            this.Bt_Buscar.Click += new System.EventHandler(this.Bt_Buscar_Click);
-            // 
-            // Bt_nue
-            // 
-            this.Bt_nue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Bt_nue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bt_nue.Image = global::Programacion_II.Properties.Resources.icons8_document_50px;
-            this.Bt_nue.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Bt_nue.Location = new System.Drawing.Point(12, 444);
-            this.Bt_nue.Name = "Bt_nue";
-            this.Bt_nue.Size = new System.Drawing.Size(60, 60);
-            this.Bt_nue.TabIndex = 11;
-            this.info.SetToolTip(this.Bt_nue, "Limpiar formulario");
-            this.Bt_nue.UseVisualStyleBackColor = true;
-            this.Bt_nue.Click += new System.EventHandler(this.Bt_nue_Click);
-            // 
-            // Bt_gua
-            // 
-            this.Bt_gua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Bt_gua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bt_gua.Image = global::Programacion_II.Properties.Resources.icons8_save_as_50px;
-            this.Bt_gua.Location = new System.Drawing.Point(78, 444);
-            this.Bt_gua.Name = "Bt_gua";
-            this.Bt_gua.Size = new System.Drawing.Size(60, 60);
-            this.Bt_gua.TabIndex = 12;
-            this.info.SetToolTip(this.Bt_gua, "Grardar Datos");
-            this.Bt_gua.UseVisualStyleBackColor = true;
-            this.Bt_gua.Click += new System.EventHandler(this.Bt_gua_Click);
-            // 
-            // Bt_mod
-            // 
-            this.Bt_mod.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Bt_mod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bt_mod.Image = global::Programacion_II.Properties.Resources.icons8_edit_property_50px;
-            this.Bt_mod.Location = new System.Drawing.Point(144, 444);
-            this.Bt_mod.Name = "Bt_mod";
-            this.Bt_mod.Size = new System.Drawing.Size(60, 60);
-            this.Bt_mod.TabIndex = 13;
-            this.info.SetToolTip(this.Bt_mod, "Actializar Informacion");
-            this.Bt_mod.UseVisualStyleBackColor = true;
-            this.Bt_mod.Click += new System.EventHandler(this.Bt_mod_Click);
-            // 
-            // Bt_can
-            // 
-            this.Bt_can.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Bt_can.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bt_can.Image = global::Programacion_II.Properties.Resources.icons8_delete_document_50px;
-            this.Bt_can.Location = new System.Drawing.Point(210, 444);
-            this.Bt_can.Name = "Bt_can";
-            this.Bt_can.Size = new System.Drawing.Size(60, 60);
-            this.Bt_can.TabIndex = 14;
-            this.info.SetToolTip(this.Bt_can, "Cancelar");
-            this.Bt_can.UseVisualStyleBackColor = true;
-            this.Bt_can.Click += new System.EventHandler(this.Bt_can_Click);
             // 
             // groupBox1
             // 
@@ -217,6 +138,7 @@ namespace Programacion_II.Forms
             this.groupBox1.Controls.Add(this.Bt_Atras);
             this.groupBox1.Controls.Add(this.DGV);
             this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.Bt_Buscar);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -424,6 +346,100 @@ namespace Programacion_II.Forms
             this.Mt_val.Size = new System.Drawing.Size(151, 20);
             this.Mt_val.TabIndex = 10;
             // 
+            // Bt_can
+            // 
+            this.Bt_can.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Bt_can.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bt_can.Image = global::Programacion_II.Properties.Resources.icons8_delete_document_50px;
+            this.Bt_can.Location = new System.Drawing.Point(210, 444);
+            this.Bt_can.Name = "Bt_can";
+            this.Bt_can.Size = new System.Drawing.Size(60, 60);
+            this.Bt_can.TabIndex = 14;
+            this.info.SetToolTip(this.Bt_can, "Cancelar");
+            this.Bt_can.UseVisualStyleBackColor = true;
+            this.Bt_can.Click += new System.EventHandler(this.Bt_can_Click);
+            // 
+            // Bt_mod
+            // 
+            this.Bt_mod.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Bt_mod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bt_mod.Image = global::Programacion_II.Properties.Resources.icons8_edit_property_50px;
+            this.Bt_mod.Location = new System.Drawing.Point(144, 444);
+            this.Bt_mod.Name = "Bt_mod";
+            this.Bt_mod.Size = new System.Drawing.Size(60, 60);
+            this.Bt_mod.TabIndex = 13;
+            this.info.SetToolTip(this.Bt_mod, "Actializar Informacion");
+            this.Bt_mod.UseVisualStyleBackColor = true;
+            this.Bt_mod.Click += new System.EventHandler(this.Bt_mod_Click);
+            // 
+            // Bt_gua
+            // 
+            this.Bt_gua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Bt_gua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bt_gua.Image = global::Programacion_II.Properties.Resources.icons8_save_as_50px;
+            this.Bt_gua.Location = new System.Drawing.Point(78, 444);
+            this.Bt_gua.Name = "Bt_gua";
+            this.Bt_gua.Size = new System.Drawing.Size(60, 60);
+            this.Bt_gua.TabIndex = 12;
+            this.info.SetToolTip(this.Bt_gua, "Grardar Datos");
+            this.Bt_gua.UseVisualStyleBackColor = true;
+            this.Bt_gua.Click += new System.EventHandler(this.Bt_gua_Click);
+            // 
+            // Bt_nue
+            // 
+            this.Bt_nue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Bt_nue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bt_nue.Image = global::Programacion_II.Properties.Resources.icons8_document_50px;
+            this.Bt_nue.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Bt_nue.Location = new System.Drawing.Point(12, 444);
+            this.Bt_nue.Name = "Bt_nue";
+            this.Bt_nue.Size = new System.Drawing.Size(60, 60);
+            this.Bt_nue.TabIndex = 11;
+            this.info.SetToolTip(this.Bt_nue, "Limpiar formulario");
+            this.Bt_nue.UseVisualStyleBackColor = true;
+            this.Bt_nue.Click += new System.EventHandler(this.Bt_nue_Click);
+            // 
+            // Bt_Atras
+            // 
+            this.Bt_Atras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Bt_Atras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bt_Atras.Image = global::Programacion_II.Properties.Resources.icons8_undo_50px;
+            this.Bt_Atras.Location = new System.Drawing.Point(451, 13);
+            this.Bt_Atras.Name = "Bt_Atras";
+            this.Bt_Atras.Size = new System.Drawing.Size(29, 29);
+            this.Bt_Atras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Bt_Atras.TabIndex = 29;
+            this.Bt_Atras.TabStop = false;
+            this.info.SetToolTip(this.Bt_Atras, "Volver al Menu Principal");
+            this.Bt_Atras.Click += new System.EventHandler(this.Bt_Atras_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Programacion_II.Properties.Resources.icons8_print_50px;
+            this.pictureBox1.Location = new System.Drawing.Point(381, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // Bt_Buscar
+            // 
+            this.Bt_Buscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Bt_Buscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bt_Buscar.Image = global::Programacion_II.Properties.Resources.icons8_search_50px1;
+            this.Bt_Buscar.Location = new System.Drawing.Point(416, 13);
+            this.Bt_Buscar.Name = "Bt_Buscar";
+            this.Bt_Buscar.Size = new System.Drawing.Size(29, 29);
+            this.Bt_Buscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Bt_Buscar.TabIndex = 29;
+            this.Bt_Buscar.TabStop = false;
+            this.info.SetToolTip(this.Bt_Buscar, "Buscar");
+            this.Bt_Buscar.Click += new System.EventHandler(this.Bt_Buscar_Click);
+            // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -463,10 +479,11 @@ namespace Programacion_II.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliente";
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Bt_Atras)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Bt_Buscar)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Bt_Atras)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bt_Buscar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -507,5 +524,6 @@ namespace Programacion_II.Forms
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox Cb_tip;
         private System.Windows.Forms.MaskedTextBox Mt_val;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
